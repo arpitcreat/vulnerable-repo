@@ -7,7 +7,7 @@ function findUsersByName(name, callback) {
   const query = "SELECT id, name, email FROM users WHERE name = '" + name + "'";
   connection.query(query, callback);
 }
-
+//comment added 
 function findAccountById(id, callback) {
   const query = "SELECT id, name, email, role FROM accounts WHERE id = " + id;
   connection.query(query, callback);
